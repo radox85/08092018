@@ -1,24 +1,13 @@
 public class ThePrimeNumbers {
 
-    static int countPrimeNumber(int[] tab) {
+    static boolean countPrimeNumber(int numberToCheck) {
 
-int numberOfNumbers=0;
-
-        for (int i = 0; i < tab.length; i++) {
-
-            if (tab[i] == 1 && tab[i] == 2) {
-                numberOfNumbers++;
-                i++;
+        for (int i = 2; i <  Math.sqrt(numberToCheck); i++) {
+            if (numberToCheck % i == 0) {
+                return false;
             }
-
-        if(tab[i]%2 == 0){
-            i++;
         }
-        else{
-
-
-        }
+        return true;
     }
-       return numberOfNumbers;
-    }
+
 }

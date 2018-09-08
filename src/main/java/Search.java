@@ -12,6 +12,18 @@ public class Search{
         BinarySearch binarySearch = new BinarySearch();
         System.out.println("Ilość porównań w wyszukiwaniu binarnym: " + binarySearch.binarySearch(tab,searchNumber));
 
+        System.out.println(ThePrimeNumbers.countPrimeNumber(11));
+
+        SmallestInBigestValueInRow smallestInBigestValueInRow = new SmallestInBigestValueInRow();
+
+
+
+      int tabToCheck[][]= {
+                {1,6,132,7,0},
+                {43,98,2,8,2},
+              {234,1,5,0}
+        };
+        System.out.println(smallestInBigestValueInRow.findMyValue(tabToCheck));
 
 
     }
